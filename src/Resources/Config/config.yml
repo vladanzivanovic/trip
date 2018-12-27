@@ -1,0 +1,8 @@
+imports:
+  - { resource: core_params.yml }
+  - { resource: services.yml }
+  - { resource: model_services.yml }
+  - { resource: vendor_services.yml }
+  - { resource: trip.yml }
+  - { resource: security.yml }
+  - { resource: routes.yml }

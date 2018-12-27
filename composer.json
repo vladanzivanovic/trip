@@ -1,0 +1,41 @@
+{
+  "name":        "ecommerce",
+  "type":        "ecommerce website",
+  "description": "",
+  "authors": [
+    {
+      "name": "Vladan Zivanovic",
+      "email": "vladapoz85@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CoreBundle\\": "src/"
+    }
+  },
+  "require": {
+    "phpmailer/phpmailer": "5.2.*",
+    "symfony/dependency-injection": "^3.3",
+    "symfony/yaml": "^3.3",
+    "symfony/config": "^3.3",
+    "symfony/http-foundation": "^4.1",
+    "swiftmailer/swiftmailer": "^5.4",
+    "symfony/options-resolver": "^3.4",
+    "symfony/var-dumper": "^3.4",
+    "openbuildings/swiftmailer-css-inliner": "0.4.*",
+    "tijsverkoyen/css-to-inline-styles": "^2.2",
+    "gumlet/php-image-resize": "^1.8",
+    "siriusphp/validation": "^2.2",
+    "mobiledetect/mobiledetectlib": "^2.8",
+    "altorouter/altorouter": "^1.2",
+    "ext-pdo": "^7.2"
+  },
+  "scripts": {
+    "develop": [
+      "composer dump-autoload",
+      "composer install",
+      "npm install",
+      "npm run dev"
+    ]
+  }
+}

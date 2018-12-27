@@ -1,0 +1,6 @@
+parameters:
+  security:
+    - ['login', 'ANONYMOUS']
+    - ['register', 'ANONYMOUS']
+    - ['api-login', 'ANONYMOUS']
+    - ['api-register', 'ANONYMOUS']

@@ -1,0 +1,23 @@
+.table {
+  thead {
+    th {
+      border-top: 0;
+    }
+  }
+}
+
+.trip-modal {
+  text-align: left;
+}
+.route-modal {
+  &__body {
+    width: 500px;
+    height: 500px;
+  }
+  #map {
+    height: 100%;
+    float: left;
+    width: 70%;
+    height: 100%;
+  }
+}

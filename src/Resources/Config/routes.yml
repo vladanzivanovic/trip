@@ -1,0 +1,11 @@
+parameters:
+  routes:
+    - ['GET', '/', 'CoreBundle\Factory\Pages\SignInFactory::index', 'login']
+    - ['GET', '/sign-up', 'CoreBundle\Factory\Pages\SignUpFactory::index', 'register']
+    - ['GET', '/logout', 'CoreBundle\Factory\Pages\LogOutFactory::index', 'logout']
+    - ['GET', '/trips', 'CoreBundle\Factory\Pages\TripsFactory::index', 'trips-list']
+    - ['POST', '/api/sign-in', 'CoreBundle\Factory\Api\SignInFactory::signIn', 'api-login']
+    - ['POST', '/api/sign-up', 'CoreBundle\Factory\Api\SignUpFactory::signUp', 'api-register']
+    - ['POST', '/api/add-trip', 'CoreBundle\Factory\Api\Trips\TripEditFactory::addTrip', 'api-add-trip']
+    - ['DELETE', '/api/delete-trip/[:id]', 'CoreBundle\Factory\Api\Trips\TripEditFactory::deleteTrip', 'api-delete-trip']
+    - ['GET', '/api/get-trip-data/[:trip_id]', 'CoreBundle\Factory\Api\Trips\TripGetFactory::getTripData', 'api-trip-route']

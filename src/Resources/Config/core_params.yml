@@ -1,0 +1,8 @@
+parameters:
+  environment: 'dev'
+  db:
+      default:
+          host: localhost
+          name: trip
+          user: root
+          password: null

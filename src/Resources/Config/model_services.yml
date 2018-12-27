@@ -1,0 +1,7 @@
+services:
+  app.user_model:
+    class: CoreBundle\Model\UserModel
+  app.trip_model:
+    class: CoreBundle\Model\TripModel
+  app.trip_data_model:
+    class: CoreBundle\Model\TripDataModel
