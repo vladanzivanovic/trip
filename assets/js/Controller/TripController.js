@@ -46,7 +46,7 @@ class TripController {
                                 <td>${window.tripTypes[type]}</td>
                                 <td>
                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn btn-secondary">View trip</button>
+                                        <button type="button" class="btn btn-secondary view-route" data-id="${id}">View trip</button>
                                         <button type="button" class="btn btn-secondary remove-trip" data-id="${id}">Delete</button>
                                     </div>
                                 </td>
